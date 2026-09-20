@@ -64,7 +64,7 @@
             text-decoration: underline;
         }
 
-        /* 首页主体 */
+        /* 首页顶部 */
         .hero {
             background: #f5f8fb;
             border-bottom: 1px solid #e4e9ef;
@@ -73,11 +73,19 @@
         .hero-inner {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 72px 24px 64px;
+            padding: 60px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .hero-text {
+            flex: 1;
         }
 
         .hero h1 {
-            margin: 0 0 8px;
+            margin: 0 0 6px;
             font-size: 44px;
             font-weight: 650;
             color: #17395c;
@@ -103,6 +111,18 @@
             font-size: 16px;
             color: #666;
             margin-top: 6px;
+        }
+
+        /* 个人照片 */
+        .profile-photo {
+            width: 225px;
+            height: 285px;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 6px;
+            border: 1px solid #d8dee5;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+            background: white;
         }
 
         main {
@@ -158,7 +178,9 @@
             font-size: 14px;
         }
 
+        /* 手机显示 */
         @media (max-width: 800px) {
+
             .nav-container {
                 flex-direction: column;
                 align-items: flex-start;
@@ -177,22 +199,40 @@
                 margin-bottom: 8px;
             }
 
+            .hero-inner {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+                gap: 28px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+
             .hero h1 {
                 font-size: 34px;
+            }
+
+            .profile-photo {
+                width: 180px;
+                height: 225px;
             }
 
             .research-list {
                 grid-template-columns: 1fr;
             }
         }
+
     </style>
 </head>
 
 <body>
 
 <header>
+
     <div class="nav-container">
-        <div class="site-name">黎洪键 · Hongjian Li</div>
+
+        <div class="site-name">
+            黎洪键 · Hongjian Li
+        </div>
 
         <nav>
             <a href="#about">个人简介</a>
@@ -201,33 +241,53 @@
             <a href="#projects">科研项目</a>
             <a href="#students">招生信息</a>
         </nav>
+
     </div>
+
 </header>
 
+
 <div class="hero">
+
     <div class="hero-inner">
 
-        <h1>黎洪键</h1>
+        <div class="hero-text">
 
-        <div class="english-name">
-            Hongjian Li
+            <h1>黎洪键</h1>
+
+            <div class="english-name">
+                Hongjian Li
+            </div>
+
+            <div class="position">
+                理学博士 · 硕士生导师
+            </div>
+
+            <div class="school">
+                广东外语外贸大学 数学与统计学院
+            </div>
+
+            <div class="school-en">
+                School of Mathematics and Statistics,
+                Guangdong University of Foreign Studies
+            </div>
+
         </div>
 
-        <div class="position">
-            理学博士 · 硕士生导师
-        </div>
+        <div class="hero-photo">
 
-        <div class="school">
-            广东外语外贸大学 数学与统计学院
-        </div>
+            <img
+                src="profile.jpg"
+                alt="Hongjian Li"
+                class="profile-photo"
+            >
 
-        <div class="school-en">
-            School of Mathematics and Statistics,
-            Guangdong University of Foreign Studies
         </div>
 
     </div>
+
 </div>
+
 
 <main>
 
@@ -296,7 +356,7 @@
         </p>
 
         <p>
-            完整论文列表将在下一步添加。
+            完整论文列表将在后续添加。
         </p>
 
     </section>
@@ -337,6 +397,7 @@
     </section>
 
 </main>
+
 
 <footer>
     © 2026 Hongjian Li · Guangdong University of Foreign Studies
