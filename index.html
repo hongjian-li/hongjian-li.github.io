@@ -4,34 +4,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>黎洪键 | Hongjian Li</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                "Microsoft YaHei",
+                "PingFang SC",
+                Arial,
+                sans-serif;
+            color: #222;
+            background: #ffffff;
+            line-height: 1.8;
+        }
+
+        /* 顶部导航栏 */
+        header {
+            background: #174a7e;
+            color: white;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 70px;
+        }
+
+        .site-name {
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 28px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* 首页主体 */
+        .hero {
+            background: #f5f8fb;
+            border-bottom: 1px solid #e4e9ef;
+        }
+
+        .hero-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 72px 24px 64px;
+        }
+
+        .hero h1 {
+            margin: 0 0 8px;
+            font-size: 44px;
+            font-weight: 650;
+            color: #17395c;
+        }
+
+        .hero .english-name {
+            font-size: 26px;
+            color: #555;
+            margin-bottom: 24px;
+        }
+
+        .hero .position {
+            font-size: 18px;
+            margin: 4px 0;
+        }
+
+        .hero .school {
+            font-size: 18px;
+            margin: 4px 0;
+        }
+
+        .hero .school-en {
+            font-size: 16px;
+            color: #666;
+            margin-top: 6px;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 45px 24px 80px;
+        }
+
+        section {
+            margin-bottom: 55px;
+        }
+
+        h2 {
+            font-size: 27px;
+            color: #174a7e;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e3e8ee;
+        }
+
+        p {
+            font-size: 17px;
+            margin: 12px 0;
+        }
+
+        .research-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px 22px;
+            margin-top: 22px;
+        }
+
+        .research-item {
+            background: #f7f9fb;
+            border-left: 4px solid #174a7e;
+            padding: 14px 18px;
+            font-size: 16px;
+        }
+
+        .notice {
+            background: #f8fafc;
+            border: 1px solid #dde5ec;
+            border-radius: 6px;
+            padding: 22px 26px;
+        }
+
+        footer {
+            background: #f3f5f7;
+            border-top: 1px solid #dce2e7;
+            text-align: center;
+            padding: 26px 20px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media (max-width: 800px) {
+            .nav-container {
+                flex-direction: column;
+                align-items: flex-start;
+                padding-top: 16px;
+                padding-bottom: 16px;
+            }
+
+            nav {
+                margin-top: 12px;
+            }
+
+            nav a {
+                margin-left: 0;
+                margin-right: 18px;
+                display: inline-block;
+                margin-bottom: 8px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .research-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>黎洪键 Hongjian Li</h1>
+<header>
+    <div class="nav-container">
+        <div class="site-name">黎洪键 · Hongjian Li</div>
 
-    <p>广东外语外贸大学 数学与统计学院</p>
+        <nav>
+            <a href="#about">个人简介</a>
+            <a href="#research">研究方向</a>
+            <a href="#publications">主要论文</a>
+            <a href="#projects">科研项目</a>
+            <a href="#students">招生信息</a>
+        </nav>
+    </div>
+</header>
 
-    <p>
-        School of Mathematics and Statistics<br>
-        Guangdong University of Foreign Studies
-    </p>
+<div class="hero">
+    <div class="hero-inner">
 
-    <h2>Research Interests</h2>
+        <h1>黎洪键</h1>
 
-    <p>
-        Number Theory and Its Applications<br>
-        Integer Matrix Equations<br>
-        Permutation Polynomials<br>
-        Irreducible Polynomials
-    </p>
+        <div class="english-name">
+            Hongjian Li
+        </div>
 
-    <h2>个人简介</h2>
+        <div class="position">
+            理学博士 · 硕士生导师
+        </div>
 
-    <p>
-        理学博士，硕士生导师。主要从事数论及其应用方面的研究。
-    </p>
+        <div class="school">
+            广东外语外贸大学 数学与统计学院
+        </div>
+
+        <div class="school-en">
+            School of Mathematics and Statistics,
+            Guangdong University of Foreign Studies
+        </div>
+
+    </div>
+</div>
+
+<main>
+
+    <section id="about">
+
+        <h2>个人简介</h2>
+
+        <p>
+            黎洪键，理学博士，硕士生导师。2024年6月毕业于华南师范大学
+            基础数学专业，获理学博士学位；同年7月入职广东外语外贸大学
+            数学与统计学院。
+        </p>
+
+        <p>
+            主要从事数论及其应用方面的研究，当前研究兴趣包括整数矩阵方程、
+            整数矩阵的二次型表示、有理数域上的不可约多项式以及置换多项式等。
+        </p>
+
+    </section>
+
+
+    <section id="research">
+
+        <h2>研究方向 · Research Interests</h2>
+
+        <div class="research-list">
+
+            <div class="research-item">
+                数论及其应用<br>
+                Number Theory and Its Applications
+            </div>
+
+            <div class="research-item">
+                整数矩阵方程<br>
+                Integer Matrix Equations
+            </div>
+
+            <div class="research-item">
+                置换多项式<br>
+                Permutation Polynomials
+            </div>
+
+            <div class="research-item">
+                不可约多项式<br>
+                Irreducible Polynomials
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="publications">
+
+        <h2>主要论文 · Publications</h2>
+
+        <p>
+            主要研究成果发表于
+            <em>American Mathematical Monthly</em>、
+            <em>Computational and Applied Mathematics</em>、
+            <em>AIMS Mathematics</em>、
+            《数学学报（中文版）》、
+            《数学进展》、
+            《数学的实践与认识》、
+            《大学数学》等期刊。
+        </p>
+
+        <p>
+            完整论文列表将在下一步添加。
+        </p>
+
+    </section>
+
+
+    <section id="projects">
+
+        <h2>科研项目 · Research Projects</h2>
+
+        <p>
+            目前参与国家自然科学基金面上项目、广东省自然科学基金面上项目
+            以及广州市基础与应用基础研究项目等科研项目。
+        </p>
+
+    </section>
+
+
+    <section id="students">
+
+        <h2>招生信息 · Prospective Students</h2>
+
+        <div class="notice">
+
+            <p>
+                所在团队长期招收学科教学（数学）方向硕士研究生。
+                研究生培养过程中，我将注重数学基础、教学能力与科研素养的协同发展，
+                鼓励学生在扎实掌握数学专业知识和现代数学教育理念的基础上，
+                根据个人兴趣开展数论及其应用、数学教育及相关方向的学习与研究。
+            </p>
+
+            <p>
+                欢迎热爱数学、对数学研究或数学教育具有浓厚兴趣，
+                并愿意持续学习、主动探索的同学与我联系。
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    © 2026 Hongjian Li · Guangdong University of Foreign Studies
+</footer>
 
 </body>
 
